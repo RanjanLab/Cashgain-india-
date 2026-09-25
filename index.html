@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#00a86b">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="CashPic">
+    <meta name="apple-mobile-web-app-title" content="Cashgain">
     <title>CashPic</title>
     
     <!-- Dynamic Manifest Link -->
@@ -193,7 +193,7 @@
         <div class="install-box">
             <div class="close-form" onclick="closeInstallModal()" style="top: 15px; right: 15px; position: absolute;"><i class="fas fa-times"></i></div>
             <div style="background: var(--primary); width: 60px; height: 60px; border-radius: 16px; margin: 0 auto 12px auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.8rem; font-weight: bold; box-shadow: 0 5px 15px rgba(0,168,107,0.3);">CG</div>
-            <h3 style="margin-bottom: 8px; color: var(--text-main); font-size: 1.2rem;">Install CashPic App</h3>
+            <h3 style="margin-bottom: 8px; color: var(--text-main); font-size: 1.2rem;">Install Cashgain App</h3>
             <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 15px;">Get a faster, safer, and app-like experience directly on your Home Screen and App List.</p>
             <div class="ios-instruction" id="iosInstruction">
                 To install on iPhone/iPad: tap the <b>Share</b> icon <i class="fas fa-external-link-alt" style="color:var(--primary); margin:0 4px;"></i> below and select <br><b>"Add to Home Screen"</b>.
@@ -450,7 +450,7 @@
             const icon192 = createPngIcon(192);
             const icon512 = createPngIcon(512);
             const manifest = {
-                name: "CashPic", short_name: "CashPic",
+                name: "Cashgain", short_name: "Cashgain",
                 start_url: window.location.href.split('?')[0], 
                 display: "standalone", background_color: "#f4f6f9", theme_color: "#00a86b",
                 icons: [
@@ -863,9 +863,9 @@
         }
 
         function shareReferral() {
-            let appUrl = `https://ranjanlab.github.io/CashPic-/?ref=${currentUser}`;
-            let shareMessage = `🚀 Join me on CashPic and start earning daily rewards! 💸\n\nIt's a secure platform to grow your income easily. Don't miss out on this opportunity!\n\n👉 Click the link below to register directly (My Referral Code is Auto-Applied):\n${appUrl}`;
-            if (navigator.share) { navigator.share({ title: 'Join CashPic Today!', text: shareMessage }).catch(e => { console.log("Share cancelled or failed", e); }); } 
+            let appUrl = `https://ranjanlab.github.io/Cashgain-india-/?ref=${currentUser}`;
+            let shareMessage = `🚀 Join me on Cashgain and start earning daily rewards! 💸\n\nIt's a secure platform to grow your income easily. Don't miss out on this opportunity!\n\n👉 Click the link below to register directly (My Referral Code is Auto-Applied):\n${appUrl}`;
+            if (navigator.share) { navigator.share({ title: 'Join Cashgain Today!', text: shareMessage }).catch(e => { console.log("Share cancelled or failed", e); }); } 
             else { navigator.clipboard.writeText(shareMessage); customAlert("Copied", "Impressive Referral message copied to clipboard!", true); }
         }
         
